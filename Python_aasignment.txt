@@ -1,0 +1,148 @@
+Q1. Why do we call Python as a general purpose and high-level programming language?
+
+	Because they are not written in machine-readable language, Python programs need to be processed 
+	before machines can run them. Python is an interpreted language. 
+	This means that every time a program is run, its interpreter runs through the code and translates it 
+	into machine-readable byte code.
+
+Q2. Why is Python called a dynamically typed language?
+	Python is a dynamically typed language because it doesn’t know about the type of the variable until 
+	the code is run. So declaration is of no use. What it does is, It stores that value at some memory location 
+	and then binds that variable name to that memory container. 
+	And makes the contents of the container accessible through that variable name. 
+	So the data type does not matter. As it will get to know the type of the value at run-time.
+
+Q3. List some pros and cons of Python programming language?
+
+==>The pros of Python
+	Python is easy to learn and read
+	Python enhances productivity
+	Python has a vast collection of libraries
+	Python is free, open-source, and has a vibrant community
+	Python is a portable programming language
+	Python is an interpreted language
+==>The cons of python programming language
+	Python has speed limitations
+	Python can have runtime errors
+	Python consumes a lot of memory space
+
+Q4. In what all domains can we use Python?
+
+	Machine learning / Artificial intelligence
+	Desktop GUI
+	Data analytics and data visualization 
+	Web development
+	Game development
+	Mobile app development
+	Embedded systems
+Q5. What are variable and how can we declare them?
+
+	Variable is a name given to Memory Location
+
+declaring variables
+
+	int_var=6
+	str_var='Hello' or("Hello")
+	float_var=12.5
+	bool_var=True or (False)--this should be Initcap
+
+Q6. How can we take an input from the user in Python?
+
+	using input() function
+	int_var=input() or (input('enter a value'))
+	str_var=input()
+Q7. What is the default datatype of the value that has been taken as an input using input() function?
+	it ia always String
+Q8. What is type casting?
+	converting the data type of variables 
+Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
+
+Q10. What are keywords?
+	keywords are inbuilt words that have specific meanings and purposes and can't be used for anything 
+	but those specific purposes. These keywords are always available. 
+
+Q11. Can we use keywords as a variable? Support your answer with reason.
+	We cannot use a keyword as a variable name, function name, or any other identifier.
+	They are used to define the syntax and structure of the Python language. 
+	All the keywords except True , False and None are in lowercase and they must be written as they are.
+
+Q12. What is indentation? What's the use of indentaion in Python?
+	Indentation refers to the spaces at the beginning of a code line. 
+	Where in other programming languages the indentation in code is for readability only, 
+	the indentation in Python is very important. Python uses indentation to indicate a block of code.
+
+Q13. How can we throw some output in Python?
+	using print() function
+Q14. What are operators in Python?
+
+	Operators are special symbols in Python that carry out arithmetic or logical computation.
+	different types of operators: arithmetic operators, assignment operators, comparison operators, logical operators
+Q15. What is difference between / and // operators?
+	/ - gives the float value
+	//- gives the interger value
+
+Q16. Write a code that gives following as an output.
+iNeuroniNeuroniNeuroniNeuron
+	# Declare a variable
+	str_var='iNeuron'
+	print('output value is : ',str_var*4)
+
+Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
+
+	#Checking if the number is odd or even
+	int_var=int(input('Enter a Number to be checked : '))
+	if int_var%2==0:
+	    print('Number is Even',int_var)
+	else :
+	    print('Number is Odd',int_var)
+Q18. What are boolean operator?
+	the final result that will be checked using logical operators on AND or OR will give true or False which are boolean operators
+Q19. What will the output of the following?
+```
+1 or 0 ---1
+
+0 and 0 --0
+
+True and False and True --False
+
+1 or 0 or 0 --1
+
+
+Q20. What are conditional statements in Python?
+
+	A conditional statement is used to handle conditions in your program.
+	These statements guide the program while making decisions based on the conditions encountered by the program. 
+
+Q21. What is use of 'if', 'elif' and 'else' keywords?
+
+	IF : It decides whether certain statements need to be executed or not. It checks for a given condition, if the condition is true, then the set of code present inside the ” if ” block will be executed otherwise not.
+	
+	elif : if the condition in the IF is not satisfied it checks for another condition inside elif
+	ELSE : if none of the conditions are satisfied it will go to else block and return thr output as mentioned
+		this is not mandatory in if-else block .
+
+Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
+
+	age_var = int(input('Enter the age of a person : '))
+	if age_var>=18 :
+	    print('I can vote ',age_var)
+	else:
+	    print("I can't vote ",age_var)
+
+Q23. Write a code that displays the sum of all the even numbers from the given list.
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+
+Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
+
+
+a=int(input('Enter a number a : '))
+b=int(input('Enter a number b : '))
+c=int(input('Enter a number c : '))
+
+if a>b and a>c :
+    print('Greatest no is a ',a)
+elif b>a and b>c :
+    print('Greatest no is b ',b)    
+elif c>a and c>b :
+    print('Greatest no is c ',c)    				
